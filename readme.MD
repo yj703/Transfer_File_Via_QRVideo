@@ -1,8 +1,8 @@
 # Transfer file via QRVideo
 
-Convert a file to a QRCode video which can be captured via screen or camera. 
+Convert a file to a QRCode video which can be captured via screen capture tool or by camera/phone video recording.
 
-Processing the video back to original file.
+Processing the recorded video file back to original file.
 
 
 
@@ -24,30 +24,36 @@ Processing the video back to original file.
 
 ## 📦 Prerequisites to run
 
-- install Java and set PATH to include java bin
+- install Java (https://www.java.com/en/download/) and set PATH to include java bin
 
 
 
 
 
 ## 🚀 Build code
-```bash
 
+You don't need run build to use this tool. only do if you have done some code work or port to different platform. 
+
+To buld qrvideo executable binary
+
+```bash
 git clone https://github.com/yj703/Transfer_File_Via_QRVideo.git
 cd Transfer_File_Via_QRVideo
 go mod tidy
 go build qrvideo.go
+```
 
+To build jar from java code
 
+```
 gradle build
-
 ```
 
 
 ## Note
 
-- When capture screen,  you can install free tool OBS (https://obsproject.com/).  Windows snipping tool lost frame. 
-- When capture with phone or camera,  put phone or camera on stable support or triport. Disable auto focus will help.
+- When capture screen,  you can install free tool OBS (https://obsproject.com/).  Windows snipping tool losts frame, doesn't work well.
+- When capture with phone or camera,  put phone or camera on stable support or triport. Sometime disable phone auto focus improve video quality.
 - Lower video speed (incrase delay to 200ms or 300ms) if video processing  failed.
 
 
